@@ -37,4 +37,6 @@ ActiveRecord::Schema.define(version: 2021_02_18_111253) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "doses", "cocktails"
+  add_foreign_key "doses", "ingredients"
 end
